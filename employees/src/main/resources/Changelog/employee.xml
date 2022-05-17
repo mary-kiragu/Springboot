@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+    <changeSet id="12345" author="root">
+        <addColumn tableName="employees">
+            <column name="job_description" type="varchar(100)"></column>
+        </addColumn>
+    </changeSet>
+    <changeSet id="123565" author="root">
+        <addColumn tableName="employees">
+            <column name="job-code" type="varchar(100)"></column>
+        </addColumn>
+    </changeSet>
+
+
+</databaseChangeLog>
